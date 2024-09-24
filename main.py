@@ -9,11 +9,11 @@
 
 # Code should ask users to input their mpg, cost of gas per gallon, and miles
 print('How much is your miles per gallon?')
-miles_per_gallon = input()
+miles_per_gallon = int(input())
 print('How much is your cost of gas per gallon?')
-gas_per_gallon = input()
+gas_per_gallon = int(input())
 print('How many miles are you commuting?')
-miles = input()
+miles = int(input())
 # Code should use users input to calculate the cost of the trip and print it to the user
-trip_cost = (float(miles)/float(miles_per_gallon)) * float(gas_per_gallon)
+trip_cost = (miles / miles_per_gallon) * gas_per_gallon#(float(miles)/float(miles_per_gallon)) * float(gas_per_gallon)
 print('Your trip cost is $'+str(trip_cost))
